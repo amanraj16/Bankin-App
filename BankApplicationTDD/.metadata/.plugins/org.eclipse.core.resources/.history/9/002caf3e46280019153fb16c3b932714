@@ -1,0 +1,14 @@
+package com.capgemini.service;
+
+import com.capgemini.beans.Account;
+import com.capgemini.exceptions.InsufficientOpeningBalanceException;
+
+public class AccountServiceImpl implements AccountService {
+
+	@Override
+	public Account createAccount(int accountNumber, int amount) throws InsufficientOpeningBalanceException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

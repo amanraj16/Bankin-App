@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.util.LinkedList"/>
+<fullyQualifiedTypeName name="com.capgemini.service.AccountService"/>
+<fullyQualifiedTypeName name="com.capgemini.repo.AccountRepo"/>
+<fullyQualifiedTypeName name="com.capgemini.service.AccountServiceImpl"/>
+<fullyQualifiedTypeName name="com.capgemini.exceptions.InsufficientOpeningBalanceException"/>
+<fullyQualifiedTypeName name="com.capgemini.beans.Account"/>
+<fullyQualifiedTypeName name="com.capgemini.exceptions.InsufficientBalanceException"/>
+<fullyQualifiedTypeName name="com.capgemini.exceptions.InvalidAccountNumberException"/>
+</qualifiedTypeNameHistroy>

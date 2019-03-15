@@ -1,0 +1,28 @@
+package com.capgemini.test;
+
+import com.capgemini.exceptions.InsufficientOpeningBalanceException;
+import com.capgemini.repo.AccountRepo;
+import com.capgemini.service.AccountService;
+import com.capgemini.service.AccountServiceImpl;
+import org.junit.Test;
+
+import org.junit.Before;
+
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+
+public class AccountTest {
+	AccountService accountService;
+	@Mock
+	AccountRepo accountRepo;
+	@Before
+	public void setup()throws Exception{
+	MockitoAnnotations.initMocks(this);
+	accountService=new AccountServiceImpl(accountRepo);
+}
+@Test(expected=com.capgemini.exceptions.InsufficientOpeningBalanceException.class)
+public void whenTheAmountIsLessThan500SystemShouldThrowAnException()throws InsufficientOpeningBalanceException
+{
+	accountService.createAccount(101,50);
+}
+}
